@@ -2,21 +2,25 @@
 import type { Movie } from "./types.ts";
 
 export function createMovie(title: string, year: number, rating: number): Movie {
-  // TODO
+  return { title, year, rating };
 }
 
 export function summary(movie: Movie): string {
-  // TODO
+  if (movie.rating === null || movie.rating === undefined) {
+    return `${movie.title} (${movie.year}) · non noté`;
+  }
+  return `${movie.title} (${movie.year}) · ★ ${movie.rating}`;
 }
 
 export function rate(movie: Movie, rating: number): Movie {
-  // TODO
+  movie.rating = rating;
+  return movie;
 }
 
 export function hasGenre(movie: Movie, genre: string): boolean {
-  // TODO
+  return movie.genres?.includes(genre) ?? false;
 }
 
 export function fields(movie: Movie): string[] {
-  // TODO
+  return Object.keys(movie);
 }
