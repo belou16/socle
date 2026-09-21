@@ -2,25 +2,25 @@
    `<T>` is a generic: the function works for an array of anything. */
 
 export function first<T>(list: T[]): T | undefined {
-  // TODO
+  return list[0];
 }
 
 export function last<T>(list: T[]): T | undefined {
-  // TODO
+  return list.at(-1);
 }
 
 export function add(list: string[], title: string): string[] {
-  // TODO
+  return [...list, title];
 }
 
 export function contains(list: string[], title: string): boolean {
-  // TODO
+  return list.includes(title);
 }
 
 export function positionOf(list: string[], title: string): number {
-  // TODO
+  return list.indexOf(title);
 }
 
 export function reversed<T>(list: T[]): T[] {
-  // TODO
+  return [...list].reverse();
 }
