@@ -20,7 +20,7 @@ export const RANKS: readonly Rank[] = [
   { xp: 450, name: "Mid-level", icon: "⚡" },
   { xp: 700, name: "Senior", icon: "🔥" },
   { xp: 950, name: "Lead", icon: "🚀" },
-  { xp: 1200, name: "Legend", icon: "👑" },
+  { xp: 1200, name: "Armando le GOAT ENFAITE EUUUUUH", icon: "👑" },
 ];
 
 export function rankFor(xp: number): Rank {
