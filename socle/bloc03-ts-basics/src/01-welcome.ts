@@ -4,13 +4,16 @@
    parameter is optional (challenge ⭐). */
 
 export function welcome(name?: string): string {
-  // TODO
+  if (name === undefined) {
+    return "Bienvenue sur NOLANFLIX !";
+  }
+  return `Bienvenue sur NOLANFLIX, ${name} !`;
 }
 
 export function uppercase(title: string): string {
-  // TODO
+  return title.toUpperCase();
 }
 
 export function titleLength(title: string): number {
-  // TODO
+  return title.length;
 }
